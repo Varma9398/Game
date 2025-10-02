@@ -62,12 +62,8 @@ ehthumbs.db
 Thumbs.db
 
 # Ignore Unity build artifacts that we're not including in the repo
-Build/*.data
-Build/*.js
-Build/*.wasm
-Build/*.br
-Build/*.mem
-Build/*.unityweb
-
-# But we want to keep the loader file
+# But we want to keep the WebGL build files for deployment
 !Build/*.loader.js
+!Build/*.data.br
+!Build/*.framework.js.br
+!Build/*.wasm.br
